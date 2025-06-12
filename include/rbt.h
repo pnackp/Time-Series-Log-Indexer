@@ -14,4 +14,8 @@ typedef struct node{
 
 extern node* root;
 
+node* create_node(time_t timestamp, long offset);
+void insert(time_t timestamp , long offset);
+void free_tree(node* root);
+
 #endif
